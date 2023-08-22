@@ -1,8 +1,12 @@
 
 export default function Header() {
 
+    const total = 100
 
     return (
-        <h1>Desde Header y actualizar</h1>
+        <>
+            <p>total a pagar: {total}</p>
+            <p>Después</p>
+        </>
     )
 }
