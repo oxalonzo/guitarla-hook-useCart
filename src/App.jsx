@@ -17,7 +17,11 @@ function App() {
 
         <div className="row mt-5">
             {data.map(() => (
-                <Guitar />
+                <Guitar 
+                  price={100}
+                  auth={true}
+                  
+                />
             ))}
             
         </div>
