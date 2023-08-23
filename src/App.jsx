@@ -5,16 +5,20 @@ import Header from "./components/Header"
 function App() {
 
   // State
-  const [auth, setAuth] = useState([])
-
-
+  const [auth, setAuth] = useState(false)
+  const [total, setTotal] = useState(0)
+  
+  function registrarHook() {
+    const [cart, setCart] = useState([])
+  }
+   
   return (
     <>
 
     <Header />
     
     <main className="container-xl mt-5">
-        <h2 className="text-center">Nuestra Colección</h2>
+        <h2 onClick={registrarHook} className="text-center">Nuestra Colección</h2>
 
         <div className="row mt-5">
             <Guitar />
