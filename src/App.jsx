@@ -1,20 +1,13 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import Guitar from "./components/Guitar"
 import Header from "./components/Header"
+import { db } from './data/db'
 
 function App() {
-  const [auth, setAuth] = useState(false)
 
-  useEffect(() => {
-    if(auth) {
-      console.log('Autenticado')
-    }
-  }, [auth])
+  const [data, setData] = useState(db)
 
-  setTimeout(() => {
-    setAuth(true)
-  }, 3000);
-   
+
   return (
     <>
 
