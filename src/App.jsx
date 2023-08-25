@@ -6,10 +6,10 @@ import { db } from './data/db'
 function App() {
 
   const [data, setData] = useState(db)
+  const [cart, setCart] = useState([])
 
   return (
     <>
-
     <Header />
     
     <main className="container-xl mt-5">
@@ -20,6 +20,7 @@ function App() {
                 <Guitar 
                   key={guitar.id}
                   guitar={guitar}
+                  setCart={setCart}
                 />
             ))}
             
