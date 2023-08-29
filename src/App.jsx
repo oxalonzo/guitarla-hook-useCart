@@ -54,6 +54,11 @@ function App() {
     setCart(updatedCart)
   }
 
+  function clearCart(e) {
+    e.preventDefault()
+    setCart([])
+  }
+
 
   return (
     <>
@@ -62,6 +67,7 @@ function App() {
       removeFromCart={removeFromCart}
       decreaseQuantity={decreaseQuantity}
       increaseQuantity={increaseQuantity}
+      clearCart={clearCart}
     />
     
     <main className="container-xl mt-5">
