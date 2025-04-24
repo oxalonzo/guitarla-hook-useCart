@@ -325,3 +325,9 @@ despues que lo creas y lo exportas entonces lo importas al componente en donde l
 
 entonces como termina siendo una funcion tienes que mandarlo a llamar desde el componente que vas a utilizar la funcion 
 
+y cuando vayas a enviar variables desde el hook a el componente recuerda utilizar el return con llaves 
+
+recuerda cada que instancias el hook creas uno nuevo de lo que instancie o sea si instancias un carrito en app es uno pero si lo vuelves a instanciar en header ese es otro y no sabe de la existencia del otro
+
+la solucion es importar como si fueran props y pasarlo hasta el componente que se va a usar y asi no se crea una nueva instancia 
+
